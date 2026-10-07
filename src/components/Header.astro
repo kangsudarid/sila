@@ -1,5 +1,5 @@
 ---
-type NavKey = 'servicios' | 'portafolio' | 'historias' | 'sobre-mi' | 'contacto';
+type NavKey = 'servicos' | 'portafolio' | 'historias' | 'sobre-mi' | 'contacto';
 
 interface Props {
   currentPage?: NavKey;
@@ -8,11 +8,11 @@ interface Props {
 const { currentPage } = Astro.props;
 
 const navItems: Array<{ key: NavKey; href: string; label: string; cta?: boolean }> = [
-  { key: 'servicios', href: '/servicios.html', label: 'Servicios' },
-  { key: 'portafolio', href: '/portafolio.html', label: 'Portafolio' },
-  { key: 'historias', href: '/historias.html', label: 'Historias' },
-  { key: 'sobre-mi', href: '/sobre-mi.html', label: 'Sobre mí' },
-  { key: 'contacto', href: '/contacto.html', label: 'Contacto', cta: true },
+  { key: 'servicios', href: '/servicios.html', label: 'Layanan' },
+  { key: 'portafolio', href: '/portafolio.html', label: 'Portofolio' },
+  { key: 'historias', href: '/historias.html', label: 'History' },
+  { key: 'sobre-mi', href: '/sobre-mi.html', label: 'About' },
+  { key: 'contacto', href: '/contacto.html', label: 'Contact', cta: true },
 ];
 ---
 
@@ -22,8 +22,8 @@ const navItems: Array<{ key: NavKey; href: string; label: string; cta?: boolean 
     <a class="brand" href="/" aria-label="Ir al inicio de Sila Padín Studio">
       <img src="/assets/brand/logo.webp" alt="Logo de Sila Padín Studio" width="96" height="96" />
       <span class="brand-text">
-        <strong>Sila Padín</strong>
-        <small>Studio</small>
+        <strong>Si Pulsa</strong>
+        <small>Sudar Cell Grub</small>
       </span>
     </a>
 
